@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "rails_xss"
-  s.version = "0.3.1"
+  s.version = "0.3.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["joloudov"]
-  s.date = "2012-09-13"
+  s.date = "2013-01-14"
   s.description = "This plugin replaces the default ERB template handlers with erubis, and switches the behaviour to escape by default rather than requiring you to escape. This is consistent with the behaviour in Rails 3.0."
   s.email = "joloudov@gmail.com"
   s.extra_rdoc_files = [

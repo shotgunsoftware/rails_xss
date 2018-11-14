@@ -1,4 +1,9 @@
+# stop erubis from printing it's version number all the time
+require 'stringio'
+old_stdout = $stdout
+$stdout = StringIO.new
 require 'erubis/helpers/rails_helper'
+$stdout = old_stdout
 
 module RailsXss
   class Erubis < ::Erubis::Eruby
